@@ -23,7 +23,7 @@ if __name__ == '__main__':
     labels_test = LabelBinarizer().fit_transform(y_test)
     
 
-    mlp.fit(X_train, labels_train, epochs=10000)
+    mlp.fit(X_train, labels_train, epochs=50000)
     
     predictions = []
     for i in range(X_test.shape[0]):
